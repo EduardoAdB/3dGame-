@@ -32,6 +32,23 @@ public class animation : MonoBehaviour
             controle.SetBool("Backward", false);
         }
 
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            controle.SetBool("Leftward", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.A))
+        {
+            controle.SetBool("Leftward", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            controle.SetBool("Rightward", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            controle.SetBool("Rightward", false);
+        }
 
     }
 }
